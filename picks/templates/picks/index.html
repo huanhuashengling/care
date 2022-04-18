@@ -1,0 +1,20 @@
+{% if columns %}
+    <p>{{ class_title }}</p>
+    <ul>
+    {% for column in columns %}
+        <li>{{ column }}</li>
+    {% endfor %}
+    </ul>
+    
+{% else %}
+<ul>
+    {% for row in dataset %}
+        <li>
+            {% for item in row %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </li>
+    {% endfor %}
+    </ul>
+    <p>No picks are available.</p>
+{% endif %}
