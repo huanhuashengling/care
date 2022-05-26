@@ -1,3 +1,4 @@
 /static/care_data
 *.xlsx
 *.xls
+*.pyc
