@@ -12,6 +12,10 @@ def wait(request):
     content = {"dataset": "I am a wait page"}
     return render(request, 'shows/wait.html', content)
 
+def regcon(request):
+    content = {"dataset": "I am a wait page"}
+    return render(request, 'shows/regcon.html', content)
+
 def show(request):
     identity_number = request.GET["identity_number"]
     student = Student.objects.filter(identity_number=identity_number).first()

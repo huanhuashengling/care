@@ -6,6 +6,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('wait/', views.wait, name='wait'),
     path('show/', views.show, name='show'),
+    path('regcon/', views.regcon, name='regcon'),
     # ex: /polls/5/
     # path('<int:question_id>/', views.detail, name='detail'),
     # ex: /polls/5/results/

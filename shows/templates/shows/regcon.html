@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <br/>
+    <div class="col text-center">
+        <h2>欢迎你！{{class_title}} {{student_name}} {{evaluate_log_count}}</h2>
+        <h5>你2021年秋季学期“班级优化大师”获得评价分数统计</h5>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col">
+    <div class="counter">
+        <i class="fa fa-code fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="{{evaluate_log_count}}" data-speed="3000"></h2>
+        <p class="count-text ">被评价总次数</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function ($) {
+
+}(jQuery));
+
+jQuery(function ($) {
+
+
+});
+</script>
+{% endblock %}
